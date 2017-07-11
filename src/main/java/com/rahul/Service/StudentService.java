@@ -1,6 +1,5 @@
 package com.rahul.Service;
 
-import com.rahul.Dao.FakeStudentDaoImp;
 import com.rahul.Dao.StudentDao;
 import com.rahul.Entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +16,8 @@ import java.util.Collection;
 public class StudentService {
 
     @Autowired
-//    @Qualifier("fakeData")
-    @Qualifier("mongoData")
+    @Qualifier("fakeData")
+//    @Qualifier("mongoData")
     private StudentDao studentDao;
 
     public Collection<Student> getAllStudents(){
