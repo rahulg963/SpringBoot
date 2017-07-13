@@ -1,18 +1,21 @@
-package com.rahul.Entity;
+package com.rahul.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
- * Created by rahul on 11/7/17.
+ * Created by rahul on 13/7/17.
  */
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class EmployeeDTO {
+@ToString
+public class UserResponseDTO {
     private int id;
+    private String email;
     private String name;
-    private int salary;
+    private UserRoleDTO role;
 }
